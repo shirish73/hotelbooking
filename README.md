@@ -11,5 +11,9 @@ Please follow below documentation for running the node api and consuming it.
 5. Once script finishes the installation, you can run the server by below commands
    1. node Server.js
    2. nodemon Server.js
-6. Please follow below steps for consuming the API
+6. Please follow below steps for consuming the API. Plesae use Postman or other tool for consuming API.
+
+i. For checking the total rooms
+ii. For Booking a room
+iii. For adding/updating and deleting a room
 
