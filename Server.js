@@ -41,7 +41,7 @@ if (!room) res.status(404).send('Ooops... Cant find what you are looking for!');
 res.send(room);
 });
 
-app.get('/api/rooms/:id', (req, res) => {
+app.get('/api/users/:id', (req, res) => {
 const  user = users.find(c => c.roomid === parseInt(req.params.id));
  
 if (!user) res.status(404).send('Ooops... Cant find what you are looking for!');
@@ -137,7 +137,9 @@ res.status(400).send(error.details[0].message);
 return;
 }
  
-room.title = req.body.title;
+room.Hotel = req.body.Hotel;
+room.price = req.body.price;
+//rooms.push(room);
 res.send(room);
 });
  
